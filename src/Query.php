@@ -818,7 +818,7 @@ class Query
      */
     public function first($scroll_id = NULL)
     {
-
+		$scroll_id = NULL;
         $this->take(1);
 
         $result = $this->getResult($scroll_id);
