@@ -1,20 +1,20 @@
 <?php
 
-namespace Qdd\Es;
+namespace qdd\es;
 
-use Qdd\Es\Commands\ReindexCommand;
+use qdd\es\Commands\ReindexCommand;
 use Elasticsearch\ClientBuilder as ElasticBuilder;
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Scout\EngineManager;
-use Qdd\Es\Commands\ListIndicesCommand;
-use Qdd\Es\Commands\CreateIndexCommand;
-use Qdd\Es\Commands\DropIndexCommand;
-use Qdd\Es\Commands\UpdateIndexCommand;
+use qdd\es\Commands\ListIndicesCommand;
+use qdd\es\Commands\CreateIndexCommand;
+use qdd\es\Commands\DropIndexCommand;
+use qdd\es\Commands\UpdateIndexCommand;
 
 /**
  * Class ElasticsearchServiceProvider
- * @package Qdd\Es
+ * @package qdd\es
  */
 class ElasticsearchServiceProvider extends ServiceProvider
 {

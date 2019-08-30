@@ -1,8 +1,8 @@
 <?php
 
-namespace Qdd\Es\Tests;
+namespace qdd\es\Tests;
 
-use Qdd\Es\Tests\Traits\ESQueryTrait;
+use qdd\es\Tests\Traits\ESQueryTrait;
 
 class WhereNotInTest extends \PHPUnit_Framework_TestCase
 {

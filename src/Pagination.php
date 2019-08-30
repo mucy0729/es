@@ -1,6 +1,6 @@
 <?php
 
-namespace Qdd\Es;
+namespace qdd\es;
 
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\UrlWindow;

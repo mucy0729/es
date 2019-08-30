@@ -1,6 +1,6 @@
 <?php
 
-namespace Qdd\Es\Commands;
+namespace qdd\es\Commands;
 
 use Illuminate\Console\Command;
 

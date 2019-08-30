@@ -6,10 +6,10 @@
  * Time: 19:58
  */
 
-namespace Qdd\Es\Tests;
+namespace qdd\es\Tests;
 
 
-use Qdd\Es\Connection;
+use qdd\es\Connection;
 use Elasticsearch\ClientBuilder;
 use Monolog\Logger;
 

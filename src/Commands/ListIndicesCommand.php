@@ -1,12 +1,12 @@
 <?php
 
-namespace Qdd\Es\Commands;
+namespace qdd\es\Commands;
 
 use Illuminate\Console\Command;
 
 /**
  * Class ListIndicesCommand
- * @package Qdd\Es\Commands
+ * @package qdd\es\Commands
  */
 class ListIndicesCommand extends Command
 {

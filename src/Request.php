@@ -1,10 +1,10 @@
 <?php
 
-namespace Qdd\Es;
+namespace qdd\es;
 
 /**
  * Class Request
- * @package Qdd\Es
+ * @package qdd\es
  */
 class Request
 {

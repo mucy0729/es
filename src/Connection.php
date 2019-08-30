@@ -1,12 +1,12 @@
 <?php
 
-namespace Qdd\Es;
+namespace qdd\es;
 
 use Elasticsearch\ClientBuilder;
 
 /**
  * Class Connection
- * @package Qdd\Es
+ * @package qdd\es
  */
 class Connection
 {

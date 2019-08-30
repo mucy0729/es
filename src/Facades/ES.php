@@ -1,6 +1,6 @@
 <?php
 
-namespace Qdd\Es\Facades;
+namespace qdd\es\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

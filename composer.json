@@ -4,8 +4,6 @@
     "keywords": [
         "elasticsearch",
         "php",
-        "laravel",
-        "lumen",
         "scout",
         "fulltext",
         "indexing",
@@ -21,7 +19,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Qdd\\Es\\": "src/"
+            "qdd\\es\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -29,7 +27,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Qdd\\Es\\Tests\\": "tests/"
+            "qdd\\es\\Tests\\": "tests/"
         }
     },
     "require": {
@@ -37,8 +35,7 @@
         "elasticsearch/elasticsearch": "^5.0|^6.0",
         "illuminate/pagination": "*",
         "illuminate/support": "*",
-        "symfony/var-dumper": "*",
-        "monolog/monolog": "^1.23"
+        "symfony/var-dumper": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "5.7.0"
@@ -46,10 +43,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Qdd\\Es\\ElasticsearchServiceProvider"
+                "qdd\\es\\ElasticsearchServiceProvider"
             ],
             "aliases": {
-                "ES": "Qdd\\Es\\Facades\\ES"
+                "ES": "qdd\\es\\Facades\\ES"
             }
         }
     }

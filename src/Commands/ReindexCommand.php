@@ -1,12 +1,12 @@
 <?php
 
-namespace Qdd\Es\Commands;
+namespace qdd\es\Commands;
 
 use Illuminate\Console\Command;
 
 /**
  * Class ReindexCommand
- * @package Qdd\Es\Commands
+ * @package qdd\es\Commands
  */
 class ReindexCommand extends Command
 {

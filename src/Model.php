@@ -1,13 +1,13 @@
 <?php
 
-namespace Qdd\Es;
+namespace qdd\es;
 
 use Illuminate\Support\Collection;
 
 /**
  * Elasticsearch data model
  * Class Model
- * @package Qdd\Es
+ * @package qdd\es
  */
 class Model
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Qdd\Es;
+namespace qdd\es;
 
 use Illuminate\Support\Collection as BaseCollection;
 

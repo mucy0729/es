@@ -1,15 +1,15 @@
 <?php
 
-namespace Qdd\Es;
+namespace qdd\es;
 
-use Qdd\Es\Classes\Bulk;
-use Qdd\Es\Classes\Search;
-use Qdd\Es\Collection;
+use qdd\es\Classes\Bulk;
+use qdd\es\Classes\Search;
+use qdd\es\Collection;
 
 
 /**
  * Class Query
- * @package Qdd\Es\Query
+ * @package qdd\es\Query
  */
 class Query
 {
@@ -157,7 +157,7 @@ class Query
 
     /**
      * Elastic model instance
-     * @var \Qdd\Es\Model
+     * @var \qdd\es\Model
      */
     public $model;
 

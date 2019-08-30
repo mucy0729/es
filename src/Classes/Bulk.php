@@ -1,12 +1,12 @@
 <?php
 
-namespace Qdd\Es\Classes;
+namespace qdd\es\Classes;
 
-use Qdd\Es\Query;
+use qdd\es\Query;
 
 /**
  * Class Bulk
- * @package Qdd\Es\Classes
+ * @package qdd\es\Classes
  */
 class Bulk
 {

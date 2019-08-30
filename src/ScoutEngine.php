@@ -1,6 +1,6 @@
 <?php
 
-namespace Qdd\Es;
+namespace qdd\es;
 
 use Laravel\Scout\Builder;
 use Laravel\Scout\Engines\Engine;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Qdd\Es;
+namespace qdd\es;
 
 /**
  * Class Index
- * @package Qdd\Es\Query
+ * @package qdd\es\Query
  */
 class Index
 {

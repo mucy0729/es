@@ -1,8 +1,8 @@
 <?php
 
-namespace Qdd\Es\Tests\Traits;
+namespace qdd\es\Tests\Traits;
 
-use Qdd\Es\Query;
+use qdd\es\Query;
 
 /**
  * Class ESQueryTrait
