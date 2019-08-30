@@ -21,7 +21,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "qdd\\es\\": "src/"
+            "Qdd\\Es\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -29,7 +29,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "qdd\\es\\Tests\\": "tests/"
+            "Qdd\\Es\\Tests\\": "tests/"
         }
     },
     "require": {
@@ -46,10 +46,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "qdd\\es\\ElasticsearchServiceProvider"
+                "Qdd\\Es\\ElasticsearchServiceProvider"
             ],
             "aliases": {
-                "ES": "qdd\\es\\Facades\\ES"
+                "ES": "Qdd\\Es\\Facades\\ES"
             }
         }
     }
