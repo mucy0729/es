@@ -241,9 +241,7 @@ class Query
      */
     public function scrollID($scroll)
     {
-
         $this->scroll_id = $scroll;
-
         return $this;
     }
 
@@ -381,7 +379,6 @@ class Query
      */
     public function select()
     {
-
         $args = func_get_args();
 
         foreach ($args as $arg) {
@@ -825,7 +822,29 @@ class Query
 
         return $this->getFirst($result);
     }
+    /**
+     * Get the first object of results
+     * @param string $scroll_id
+     * @return object
+     */
+    public function value($scroll_id = NULL)
+    {
+		$scroll_id = NULL;
+        $this->take(1);
 
+        $result = $this->getResult($scroll_id);
+
+        return $this->getFirst($result);
+    }
+
+    protected function clean(){
+        $this->_source = [];
+        $this->sort = [];
+        $this->body = [];
+        $this->must = [];
+        $this->must_not = [];
+        $this->filter = [];
+    }
     /**
      * Get query result
      * @param $scroll_id
@@ -833,7 +852,6 @@ class Query
      */
     protected function getResult($scroll_id)
     {
-
         if (is_null($this->cacheMinutes)) {
             $result = $this->response($scroll_id);
         } else {
@@ -844,7 +862,7 @@ class Query
                 $result = $this->response($scroll_id);
             }
         }
-
+        $this->clean();
         return $result;
     }
 
@@ -967,34 +985,13 @@ class Query
      */
     protected function getFirst($result = [])
     {
-
         if (array_key_exists("hits", $result) && count($result["hits"]["hits"])) {
-
-            $data = $result["hits"]["hits"];
-
-            if ($this->model) {
-                $model = new $this->model($data[0]["_source"], true);
-            } else {
-                $model = new Model($data[0]["_source"], true);
-                $model->setConnection($model->getConnection());
-                $model->setIndex($data[0]["_index"]);
-                $model->setType($data[0]["_type"]);
-            }
-
-            // match earlier version
-
-            $model->_index = $data[0]["_index"];
-            $model->_type = $data[0]["_type"];
-            $model->_id = $data[0]["_id"];
-            $model->_score = $data[0]["_score"];
-
-            $new = $model;
-
+            $data = $result["hits"]["hits"][0]["_source"];
         } else {
-            $new = NULL;
+            $data = NULL;
         }
 
-        return $new;
+        return $data;
     }
 
     /**
