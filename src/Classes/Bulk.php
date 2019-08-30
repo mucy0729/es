@@ -1,12 +1,12 @@
 <?php
 
-namespace Basemkhirat\Elasticsearch\Classes;
+namespace Qdd\Es\Classes;
 
-use Basemkhirat\Elasticsearch\Query;
+use Qdd\Es\Query;
 
 /**
  * Class Bulk
- * @package Basemkhirat\Elasticsearch\Classes
+ * @package Qdd\Es\Classes
  */
 class Bulk
 {

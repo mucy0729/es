@@ -1,10 +1,10 @@
 <?php
 
-namespace Basemkhirat\Elasticsearch;
+namespace Qdd\Es;
 
 /**
  * Class Index
- * @package Basemkhirat\Elasticsearch\Query
+ * @package Qdd\Es\Query
  */
 class Index
 {

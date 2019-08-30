@@ -1,6 +1,6 @@
 <?php
 
-namespace Basemkhirat\Elasticsearch\Commands;
+namespace Qdd\Es\Commands;
 
 use Illuminate\Console\Command;
 

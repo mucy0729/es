@@ -1,13 +1,13 @@
 <?php
 
-namespace Basemkhirat\Elasticsearch;
+namespace Qdd\Es;
 
 use Illuminate\Support\Collection;
 
 /**
  * Elasticsearch data model
  * Class Model
- * @package Basemkhirat\Elasticsearch
+ * @package Qdd\Es
  */
 class Model
 {

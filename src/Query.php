@@ -1,15 +1,15 @@
 <?php
 
-namespace Basemkhirat\Elasticsearch;
+namespace Qdd\Es;
 
-use Basemkhirat\Elasticsearch\Classes\Bulk;
-use Basemkhirat\Elasticsearch\Classes\Search;
-use Basemkhirat\Elasticsearch\Collection;
+use Qdd\Es\Classes\Bulk;
+use Qdd\Es\Classes\Search;
+use Qdd\Es\Collection;
 
 
 /**
  * Class Query
- * @package Basemkhirat\Elasticsearch\Query
+ * @package Qdd\Es\Query
  */
 class Query
 {
@@ -157,7 +157,7 @@ class Query
 
     /**
      * Elastic model instance
-     * @var \Basemkhirat\Elasticsearch\Model
+     * @var \Qdd\Es\Model
      */
     public $model;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Basemkhirat\Elasticsearch\Tests;
+namespace Qdd\Es\Tests;
 
-use Basemkhirat\Elasticsearch\Tests\Traits\ESQueryTrait;
+use Qdd\Es\Tests\Traits\ESQueryTrait;
 
 class OrderTest extends \PHPUnit_Framework_TestCase
 {

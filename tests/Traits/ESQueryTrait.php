@@ -1,8 +1,8 @@
 <?php
 
-namespace Basemkhirat\Elasticsearch\Tests\Traits;
+namespace Qdd\Es\Tests\Traits;
 
-use Basemkhirat\Elasticsearch\Query;
+use Qdd\Es\Query;
 
 /**
  * Class ESQueryTrait

@@ -1,12 +1,12 @@
 <?php
 
-namespace Basemkhirat\Elasticsearch;
+namespace Qdd\Es;
 
 use Elasticsearch\ClientBuilder;
 
 /**
  * Class Connection
- * @package Basemkhirat\Elasticsearch
+ * @package Qdd\Es
  */
 class Connection
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Basemkhirat\Elasticsearch;
+namespace Qdd\Es;
 
 /**
  * Class Request
- * @package Basemkhirat\Elasticsearch
+ * @package Qdd\Es
  */
 class Request
 {
