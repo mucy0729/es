@@ -1,6 +1,6 @@
 {
-    "name": "basemkhirat/elasticsearch",
-    "description": "Laravel, Lumen and Native php elasticseach query builder to build complex queries using an elegant syntax",
+    "name": "qdd/es",
+    "description": "yaf es",
     "keywords": [
         "elasticsearch",
         "php",
@@ -13,20 +13,15 @@
     ],
     "license": "MIT",
     "type": "package",
-    "homepage": "http://basemkhirat.com",
-    "support": {
-        "issues": "https://github.com/basemkhirat/elasticsearch/issues",
-        "source": "http://basemkhirat.com/indexing/2016/01/07/laravel-elasticseach-query-builder.html"
-    },
     "authors": [
         {
-            "name": "basemkhirat",
-            "email": "basemkhirat@gmail.com"
+            "name": "mucy0729",
+            "email": "mucy0729@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Basemkhirat\\Elasticsearch\\": "src/"
+            "qdd\\es\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -34,7 +29,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Basemkhirat\\Elasticsearch\\Tests\\": "tests/"
+            "qdd\\es\\Tests\\": "tests/"
         }
     },
     "require": {
@@ -51,10 +46,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Basemkhirat\\Elasticsearch\\ElasticsearchServiceProvider"
+                "qdd\\es\\ElasticsearchServiceProvider"
             ],
             "aliases": {
-                "ES": "Basemkhirat\\Elasticsearch\\Facades\\ES"
+                "ES": "qdd\\es\\Facades\\ES"
             }
         }
     }
